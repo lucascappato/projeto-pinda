@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+/*
+#FBDA76
+#FAC62A
+#C79E21
+#7A6115
+#7A6A3A
+*/
+
+:root{
+    --cor1: #FBDA76;
+    --cor2: #FAC62A;
+    --cor3: #C79E21;
+    --cor4: #7A6115;
+    --cor5: #7A6A3A;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Mouse Memoirs';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding: 40px;
+    min-height: 150px;
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 4.5em;
+    margin-bottom: 30px;
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+}
+
+nav > a{
+    color: var(--cor2);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav >a:hover{
+    background-color: var(--cor4);
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+}
+
+main h2{
+    font-family: var(--fonte-destaque);
+    color: var(--cor4);
+    font-size: 1.8em;
+    text-indent: 8px;
+    padding-bottom: 7px;
+}
+
+main h3{
+    font-family: var(--fonte-destaque);
+    color: var(--cor3);
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    text-indent: 8px;
+}
+
+
+
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+}
+
+main img{
+    margin: auto;
+    display: block;
+    padding: 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    padding: 1px 5px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside p.centro{
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
