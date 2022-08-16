@@ -27,6 +27,7 @@
 
 body{
     background-color: var(--cor1);
+    background-image: url(../imagens/pattern004.png);
 }
 
 header{
